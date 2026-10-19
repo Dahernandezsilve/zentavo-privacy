@@ -24,7 +24,8 @@
   th, td { text-align: left; vertical-align: top; padding: 0.5rem; border-bottom: 1px solid #d2d2d7; }
   a { color: #0b5cad; }
   .vigencia { color: #555; margin: 0 0 1.5rem; }
-  #borrar-cuenta { scroll-margin-top: 1rem; }
+  #borrar-cuenta, #borrar-datos { scroll-margin-top: 1rem; }
+  h3 { font-size: 1.0625rem; margin: 1.25rem 0 0.25rem; }
   .destacado { border-left: 4px solid #0b5cad; padding: 0.25rem 0 0.25rem 1rem; }
   @media (prefers-color-scheme: dark) {
     body { color: #f2f2f7; background: #111114; }
@@ -46,10 +47,11 @@
 
 <h2>Resumen</h2>
 <ul>
-  <li>Zentavo guarda lo que registras (movimientos, categorías, tarjetas y cuotas) y tu nombre y correo de Google para identificar tu cuenta.</li>
+  <li>Zentavo guarda lo que registras (movimientos con su categoría, tarjetas y cuotas) y tu nombre y correo de Google para identificar tu cuenta.</li>
   <li>Si activas los avisos del banco, Zentavo lee en tu teléfono las notificaciones de la app de tu banco y de los SMS del banco (compras, pagos, ingresos y transferencias) y saca de ahí unos pocos datos: el monto, el comercio, los últimos 4 dígitos de la tarjeta o cuenta si el aviso los trae, las cuotas, el banco, la fecha y el tipo de operación. <strong>Solo envía esos datos.</strong> El texto completo del aviso nunca sale de tu teléfono.</li>
   <li>Tus datos <strong>no se venden ni se comparten</strong> con nadie para publicidad ni para ningún otro fin. Zentavo no tiene anuncios.</li>
   <li>Puedes pedir que se borre tu cuenta y todos tus datos cuando quieras (ver <a href="#borrar-cuenta">«Borrar tu cuenta y tus datos»</a>).</li>
+  <li>También puedes borrar desde la app movimientos, tarjetas y cuotas sin borrar tu cuenta (ver <a href="#borrar-datos">«Borrar parte de tus datos sin borrar tu cuenta»</a>).</li>
 </ul>
 
 <h2>Qué datos guarda Zentavo</h2>
@@ -62,7 +64,6 @@
 <p><strong>Lo que registras en la app:</strong></p>
 <ul>
   <li>movimientos: monto, fecha, categoría, tipo (gasto o ingreso), comercio o nota, y si vino de un aviso del banco y si ya lo revisaste. Si el movimiento vino de un aviso, también el banco, el tipo de operación, las cuotas y los últimos 4 dígitos de la tarjeta o cuenta, si el aviso los traía;</li>
-  <li>categorías;</li>
   <li>tarjetas de crédito: el nombre que les pones, sus días de corte y de pago y sus últimos 4 dígitos; planes de cuotas y pagos marcados. Zentavo <strong>nunca</strong> guarda números completos de tarjeta o de cuenta: como mucho, los últimos 4 dígitos;</li>
   <li>tus ajustes, como el tipo de cambio que usas para compras en dólares.</li>
 </ul>
@@ -141,6 +142,49 @@
 <ul>
   <li>En un plazo de <strong>7 días</strong> se borra tu cuenta con todos tus movimientos, categorías, tarjetas, cuotas, avisos y sesiones, y se te quita el acceso. Te avisamos por correo cuando esté hecho.</li>
   <li>Tus datos pueden seguir dentro de los respaldos cifrados hasta 30 días, más unas 6 horas en el historial de la base de datos. Después desaparecen solos.</li>
+  <li>Lo que vive solo en tu teléfono se borra al desinstalar la app.</li>
+</ul>
+</section>
+
+<section class="destacado">
+<h2 id="borrar-datos">Borrar parte de tus datos sin borrar tu cuenta</h2>
+<p>En Zentavo puedes borrar movimientos, tarjetas y cuotas cuando quieras, sin borrar tu cuenta y sin escribirnos. Lo que borras se borra del servidor en ese momento y no se puede recuperar desde la app.</p>
+
+<h3>Un movimiento (también un aviso del banco «Por revisar»)</h3>
+<ol>
+  <li>Toca el movimiento en Inicio, en una categoría del Resumen o en el detalle de una tarjeta.</li>
+  <li>En «Editar movimiento», toca el ícono de basura («Eliminar movimiento»).</li>
+  <li>Confirma con «Eliminar».</li>
+</ol>
+<p>Se borra el movimiento con todo lo que guardaba: monto, fecha, categoría, nota y, si vino de un aviso, el comercio, el banco, las cuotas y los últimos 4 dígitos. Si era una compra a cuotas, sus cuotas dejan de contar en la tarjeta.</p>
+
+<h3>Una tarjeta</h3>
+<ol>
+  <li>En Tarjetas, toca la tarjeta.</li>
+  <li>Al final de la pantalla, toca «Eliminar tarjeta».</li>
+  <li>Confirma con «Eliminar».</li>
+</ol>
+<p>Se borran la tarjeta (su nombre, sus días de corte y de pago y sus últimos 4 dígitos), sus cuotas que ya tenías, sus pagos marcados y sus recordatorios. <strong>Tus movimientos no se borran:</strong> solo dejan de estar asociados a esa tarjeta. Si también quieres borrarlos, bórralos uno por uno como se explica arriba.</p>
+
+<h3>Unas cuotas que ya tenías</h3>
+<ol>
+  <li>En Tarjetas, toca la tarjeta.</li>
+  <li>En «Cuotas activas», toca las cuotas.</li>
+  <li>Toca «Eliminar».</li>
+</ol>
+<p>Se borran su descripción, la cuota mensual y las cuotas que faltaban. Cuando unas cuotas que ya tenías terminan, dejan de aparecer en «Cuotas activas» y ya no se pueden borrar por separado: se borran al eliminar la tarjeta o tu cuenta.</p>
+
+<p><strong>Un pago marcado:</strong> en el detalle de la tarjeta, «Desmarcar pago» borra la marca del pago pendiente. Las marcas de ciclos anteriores no se pueden borrar por separado: se borran al eliminar la tarjeta o tu cuenta.</p>
+
+<p>Lo que no se puede borrar por separado:</p>
+<ul>
+  <li>Tu nombre, tu correo y el identificador de tu cuenta de Google, y tus ajustes (el tipo de cambio para compras en dólares se puede cambiar, pero no borrar). Para borrarlos, borra tu cuenta (ver <a href="#borrar-cuenta">«Borrar tu cuenta y tus datos»</a>).</li>
+  <li>Las categorías son una lista fija de Zentavo, igual para todos; la categoría de cada movimiento se borra con el movimiento.</li>
+</ul>
+
+<p>Cuánto tiempo queda lo que borras:</p>
+<ul>
+  <li>Puede seguir dentro de los respaldos cifrados hasta 30 días, más unas 6 horas en el historial de la base de datos. Después desaparece solo.</li>
   <li>Lo que vive solo en tu teléfono se borra al desinstalar la app.</li>
 </ul>
 </section>
